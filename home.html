@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check sentiment of a twitter message</title>
+</head>
+<body>
+<h1>Twitter Sentiment</h1>
+<form action="predict" method="post">
+    <textarea rows = "5" cols = "60" name = "msg">
+Enter tweet text here...
+    </textarea>
+    <input type="submit" value="Submit">
+</form>
+<div>
+<h1>Sentiment for tweet</h1>
+<label>{{ msg }} </label>
+<h1>Is: {{ prediction }}</h1>
+</div>
+</body>
+</html>
